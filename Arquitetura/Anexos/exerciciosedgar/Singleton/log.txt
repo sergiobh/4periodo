@@ -1,0 +1,7 @@
+
+Teste de Singleton
+Deu erro: / by zero
+
+Teste de Singleton 
+
+Deu erro: / by zero

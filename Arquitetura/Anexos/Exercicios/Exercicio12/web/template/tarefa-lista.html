@@ -1,0 +1,49 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+
+        <div class="container">
+
+
+
+            <div class="modal-header">
+              <button class="btn btn-primary" ng-click="newTarefa()" >Nova Tarefa</button>  
+                
+            </div>
+
+
+            <table cellpadding="0" cellspacing="0" border="0" class="table" id="dyntable">
+               
+                <thead>
+                    <tr>
+                        <th >Id</th>
+                        <th >Descrição</th>
+                        <th >Status</th>
+                        <th >Acão</th>
+                    </tr>
+                </thead>
+                <tbody  ng:repeat="tarefa in tarefas">
+                    <tr>
+                        <td>{{tarefa.id}}</td>
+                        <td>{{tarefa.descricao}}</td>
+                        <td>{{tarefa.status}}</td>
+                        <td>
+                            <button class="btn btn-danger" ng-click="deleteTarefa(tarefa)">x</button>
+                        </td>
+                    </tr>
+                </tbody>
+
+                
+
+        </div> <!-- /container -->
+
+    </body>
+</html>
